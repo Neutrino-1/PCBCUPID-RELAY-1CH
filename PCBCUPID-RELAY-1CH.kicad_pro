@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 2.5,
-          "height": 2.5,
-          "width": 3.5
+          "height": 4.0,
+          "width": 4.0
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -88,9 +88,9 @@
         "item_on_disabled_layer": "error",
         "items_not_allowed": "error",
         "length_out_of_range": "error",
-        "lib_footprint_issues": "ignore",
-        "lib_footprint_mismatch": "ignore",
-        "malformed_courtyard": "ignore",
+        "lib_footprint_issues": "warning",
+        "lib_footprint_mismatch": "warning",
+        "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
@@ -109,7 +109,7 @@
         "starved_thermal": "error",
         "text_height": "warning",
         "text_on_edge_cuts": "error",
-        "text_thickness": "ignore",
+        "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_angle": "error",
@@ -191,9 +191,7 @@
         0.0,
         0.3,
         0.5,
-        1.5,
-        2.0,
-        3.0
+        2.5
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -470,7 +468,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "PCBCUPID-RELAY-2CH.kicad_pro",
+    "filename": "PCBCUPID-RELAY-1CH.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -506,18 +504,18 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "2-CH-Relay-Production-Gerber/",
+      "plot": "1ch-Relay-Production-Gerber/",
       "pos_files": "./",
       "specctra_dsn": "",
-      "step": "PCBCUPID-RELAY-2CH.step",
-      "svg": "./",
+      "step": "",
+      "svg": "SVG/",
       "vrml": ""
     },
     "page_layout_descr_file": ""
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "..\\Production\\PCBCUPID-RELAY-2CH.csv",
+    "bom_export_filename": "PCBCUPID-RELAY-1CH-BOM.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -548,7 +546,7 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -576,48 +574,6 @@
         },
         {
           "group_by": false,
-          "label": "Availability",
-          "name": "Availability",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Check_prices",
-          "name": "Check_prices",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Description_1",
-          "name": "Description_1",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MF",
-          "name": "MF",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MP",
-          "name": "MP",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Package",
-          "name": "Package",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Price",
-          "name": "Price",
-          "show": false
-        },
-        {
-          "group_by": false,
           "label": "Sim.Device",
           "name": "Sim.Device",
           "show": false
@@ -630,14 +586,14 @@
         },
         {
           "group_by": false,
-          "label": "SnapEDA_Link",
-          "name": "SnapEDA_Link",
-          "show": false
+          "label": "Description",
+          "name": "Description",
+          "show": true
         },
         {
           "group_by": false,
-          "label": "Description",
-          "name": "Description",
+          "label": "MP",
+          "name": "MP",
           "show": true
         }
       ],
@@ -645,8 +601,8 @@
       "group_symbols": true,
       "include_excluded_from_bom": false,
       "name": "",
-      "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_asc": false,
+      "sort_field": "Value"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -690,7 +646,7 @@
   },
   "sheets": [
     [
-      "8a0ae01c-b563-4d91-bd67-ee32ae38a273",
+      "9fff34da-9682-4a81-ba1b-458f1a1c5496",
       "Root"
     ]
   ],
